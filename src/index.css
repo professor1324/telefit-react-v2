@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply
+  no-animation
+}
+
+h1, h2, h3, label input{
+  @apply text-white;
+}
+
+.link-button {
+  @apply p-5 bg-gray-50/75 border h-fit rounded-md hover:bg-blue-50 cursor-pointer;
+}
+
+/* Applying text styles */
+.link-button h1, .link-button p {
+  @apply text-white;
+}
+
+/* Hover effect to turn the text black */
+.link-button:hover h1, 
+.link-button:hover p {
+  @apply text-black;
+}
+

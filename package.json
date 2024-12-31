@@ -1,0 +1,51 @@
+{
+  "name": "telefit-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"node netlify/functions/telegramBot.js\"",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "postinstall": "node install-sharp.js",
+    "bundle:functions": "zip-it-and-ship-it netlify/functions dist/functions"
+  },
+  "dependencies": {
+    "axios": "^1.7.5",
+    "clarifai": "^2.9.1",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.13.0",
+    "firebase-admin": "^12.4.0",
+    "firebase-tools": "^13.15.4",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "lucide-react": "^0.429.0",
+    "multiparty": "^4.2.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@netlify/zip-it-and-ship-it": "^9.38.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^8.2.2",
+    "daisyui": "^4.12.10",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.1"
+  }
+}
